@@ -10,7 +10,12 @@ function App() {
     })();
   });
 
-  return <div>{data}</div>;
+  return (
+    <>
+      <div>{data}</div>
+      <a href="/.auth/login/aad">Login</a>
+    </>
+  );
   // const value = 'World';
   // return <div>Hello {value}</div>;
 }
