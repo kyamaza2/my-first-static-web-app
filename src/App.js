@@ -13,12 +13,10 @@ function App() {
   return (
     <>
       <div>{data}</div>
-      <a href="/.auth/login/aad">Login</a>
-      <a href="/.auth/logout/">Logout</a>
+      <p><a href="/.auth/login/aad">Login</a></p>
+      <p><a href="/.auth/logout/">Logout</a></p>
     </>
   );
-  // const value = 'World';
-  // return <div>Hello {value}</div>;
 }
 
 export default App;
