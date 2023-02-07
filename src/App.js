@@ -13,7 +13,8 @@ function App() {
 
   useEffect(() => {
     (async () => {
-      const { text } = await( await fetch('/.auth/me')).json();
+      const text = await( await fetch('/.auth/me')).json();
+      console.log(text);
       setLogindata(text);
     })();
   });
