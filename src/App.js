@@ -14,6 +14,7 @@ function App() {
     <>
       <div>{data}</div>
       <a href="/.auth/login/aad">Login</a>
+      <a href="/.auth/logout/">Logout</a>
     </>
   );
   // const value = 'World';
