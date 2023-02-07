@@ -15,8 +15,8 @@ function App() {
     (async () => {
       const { text } = await( await fetch('/.auth/me')).json();
       setLogindata(text);
-    })
-  })
+    })();
+  });
 
   return (
     <>
