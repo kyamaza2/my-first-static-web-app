@@ -22,7 +22,10 @@ function App() {
   return (
     <>
       <div>{data}</div>
-      <div>{logindata}</div>
+      {logindata
+        ? <p>ログイン成功</p>
+        : <p>ログインしてください</p>}
+      {/* <div>{logindata}</div> */}
       <p><a href="/.auth/login/aad">Login</a></p>
       <p><a href="/.auth/logout/">Logout</a></p>
     </>
