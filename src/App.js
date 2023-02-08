@@ -9,15 +9,14 @@ function App() {
       const { text } = await( await fetch(`/api/message`)).json();
       setData(text);
     })();
-  });
+  }, []);
 
   useEffect(() => {
     (async () => {
       const { clientPrincipal } = await( await fetch(`/.auth/me`)).json();
-      console.log(clientPrincipal);
       setLogindata(clientPrincipal);
     })();
-  });
+  }, []);
 
   return (
     <>
@@ -25,7 +24,6 @@ function App() {
       {logindata
         ? <p>ログイン成功</p>
         : <p>ログインしてください</p>}
-      {/* <div>{logindata}</div> */}
       <p><a href="/.auth/login/aad">Login</a></p>
       <p><a href="/.auth/logout/">Logout</a></p>
     </>
