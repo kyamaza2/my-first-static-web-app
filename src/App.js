@@ -22,7 +22,7 @@ function App() {
   return (
     <>
       <div>{data}</div>
-      <div>{logindata}</div>
+      {/* <div>{logindata}</div> */}
       <p><a href="/.auth/login/aad">Login</a></p>
       <p><a href="/.auth/logout/">Logout</a></p>
     </>
