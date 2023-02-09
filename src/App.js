@@ -26,7 +26,6 @@ function App() {
         : <p>ログインしてください</p>}
       <p><a href="/.auth/login/aad">Login</a></p>
       <p><a href="/.auth/logout/">Logout</a></p>
-      <p><a href="/roleTest">テストページ</a></p>
     </>
   );
 }
