@@ -1,4 +1,15 @@
 {
+    "auth": {
+        "identityProviders": {
+            "azureActiveDirectory": {
+                "registration": {
+                    "openIdIssuer": "https://login.microsoftonline.com/47aeabc2-cc53-4cad-9e86-38302de7d323/v2.0",
+                    "clientIdSettingName": "AZURE_CLIENT_ID",
+                    "clientSecretSettingName": "AZURE_CLIENT_SECRET"
+                }
+            }
+        }
+    },
     "responseOverrides": {
         "401": {
             "statusCode": 302,
